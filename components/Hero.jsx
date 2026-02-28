@@ -3,7 +3,7 @@ import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/all";
 import { TiLocationArrow } from "react-icons/ti";
-import React,{ useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Button from "./Button";
 import VideoPreview from "./VideoPreview";
 
@@ -16,7 +16,7 @@ const Hero = () => {
   const [loading, setLoading] = useState(true);
   const [loadedVideos, setLoadedVideos] = useState(0);
 
-  const totalVideos = 4;
+  const totalVideos = 2;
   const nextVdRef = useRef(null);
 
   const handleVideoLoad = () => {
@@ -88,7 +88,6 @@ const Hero = () => {
     <div className="relative h-dvh w-screen overflow-x-hidden">
       {loading && (
         <div className="flex-center absolute z-[100] h-dvh w-screen overflow-hidden bg-violet-50">
-          {/* https://uiverse.io/G4b413l/tidy-walrus-92 */}
           <div className="three-body">
             <div className="three-body__dot"></div>
             <div className="three-body__dot"></div>
@@ -99,7 +98,7 @@ const Hero = () => {
 
       <div
         id="video-frame"
-        className="relative z-10 h-dvh w-screen overflow-hidden rounded-lg bg-blue-75"
+        className="relative z-10 h-dvh w-screen overflow-hidden rounded-lg bg-red-75"
       >
         <div>
           <div className="mask-clip-path absolute-center absolute z-50 size-64 cursor-pointer overflow-hidden rounded-lg">
@@ -143,13 +142,13 @@ const Hero = () => {
         </div>
 
         <h1 className="special-font hero-heading absolute bottom-5 right-5 z-40 text-red-50">
-        DESC<b>E</b>ND INTO <br/> THE <b>M</b>ULT<b>I</b>VERSE
+          DESC<b>E</b>ND INTO <br /> THE <b>M</b>ULT<b>I</b>VERSE
         </h1>
 
         <div className="absolute left-0 top-0 z-40 size-full">
           <div className="mt-24 px-5 sm:px-10">
             <h1 className="special-font hero-heading text-red-100">
-              M<b>A</b>RVEL: MULT<b>I</b>VERSE 
+              M<b>A</b>RVEL: MULT<b>I</b>VERSE
             </h1>
 
             <p className="mb-5 max-w-82 font-robert-regular text-red-100">
@@ -167,7 +166,7 @@ const Hero = () => {
       </div>
 
       <h1 className="special-font hero-heading absolute bottom-5 right-5 text-white">
-        DESC<b>E</b>ND INTO <br/> THE <b>M</b>ULT<b>I</b>VERSE
+        DESC<b>E</b>ND INTO <br /> THE <b>M</b>ULT<b>I</b>VERSE
       </h1>
     </div>
   );

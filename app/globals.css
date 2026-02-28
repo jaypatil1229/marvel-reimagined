@@ -3,8 +3,9 @@
 body {
   font-family: "General Sans", sans-serif;
   width: 100dvw;
-  background-color: #dfdff0;
+  background-color: #000000;
   overflow-x: hidden;
+  color: white;
 }
 
 @theme {
@@ -15,14 +16,15 @@ body {
   --font-robert-regular: robert-regular, sans-serif;
 
   --color-red-50: #ffc2c2;
-  --color-blue-75: #dfdff2;
+  --color-red-75: #ff9999;
   --color-red-100: #ffebeb;
-  --color-blue-200: #010101;
-  --color-blue-300: #4fb7dd;
+  --color-red-200: #010101;
+  --color-red-300: #e62429;
   --color-violet-300: #5724ff;
   --color-yellow-100: #8e983f;
   --color-yellow-300: #edff66;
 }
+
 @utility border-hsla {
   border-width: 1px;
   border-color: rgb(255 255 255 / 0.2);
@@ -62,7 +64,7 @@ body {
   }
 
   .nav-hover-btn {
-    @apply relative ms-10 font-general text-lg md:text-sm  uppercase text-red-100 after:absolute after:-bottom-0.5 after:left-0 after:h-0.5 after:w-full after:origin-bottom-right after:scale-x-0 after:bg-neutral-800 after:transition-transform after:duration-300 after:ease-[cubic-bezier(0.65_0.05_0.36_1)] hover:after:origin-bottom-left hover:after:scale-x-100 dark:after:bg-white cursor-pointer;
+    @apply relative ms-10 font-general text-lg md:text-sm uppercase text-red-100 after:absolute after:-bottom-0.5 after:left-0 after:h-0.5 after:w-full after:origin-bottom-right after:scale-x-0 after:bg-neutral-800 after:transition-transform after:duration-300 after:ease-[cubic-bezier(0.65_0.05_0.36_1)] hover:after:origin-bottom-left hover:after:scale-x-100 dark:after:bg-white cursor-pointer;
   }
 
   .floating-nav {
@@ -87,7 +89,7 @@ body {
   }
 
   .hero-heading {
-    @apply uppercase font-zentry font-black text-9xl! sm:right-10 sm:text-7xl md:text-9xl lg:text-[12rem];
+    @apply uppercase font-zentry font-black !text-9xl sm:right-10 sm:text-7xl md:text-9xl lg:text-[12rem];
   }
 
   .about-subtext {
@@ -174,10 +176,12 @@ body {
       height: 4px;
       transform: translateY(-0px);
     }
+
     50% {
       height: 16px;
       transform: translateY(-4px);
     }
+
     100% {
       height: 4px;
       transform: translateY(-0px);
@@ -237,8 +241,7 @@ body {
   .three-body__dot:nth-child(2)::after {
     bottom: 0;
     left: 0;
-    animation: wobble1 var(--uib-speed) infinite calc(var(--uib-speed) * -0.15)
-      ease-in-out;
+    animation: wobble1 var(--uib-speed) infinite calc(var(--uib-speed) * -0.15) ease-in-out;
   }
 
   .three-body__dot:nth-child(3) {
@@ -264,6 +267,7 @@ body {
   }
 
   @keyframes wobble1 {
+
     0%,
     100% {
       transform: translateY(0%) scale(1);
@@ -277,6 +281,7 @@ body {
   }
 
   @keyframes wobble2 {
+
     0%,
     100% {
       transform: translateY(0%) scale(1);

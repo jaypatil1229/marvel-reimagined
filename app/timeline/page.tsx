@@ -36,7 +36,7 @@ export default function Timeline() {
         <div className="text-center mb-20 fade-in-section">
           <AnimatedTitle 
             title="THE INFINITY<br />UX SAGA"
-            containerClass="text-red-600! mb-4! text-center"
+            containerClass="!text-red-600 !mb-4 text-center"
           />
           <p className="text-gray-400 mt-6 max-w-2xl mx-auto text-lg md:text-xl font-circular-web">
             A comprehensive UX/UI Strategy & Interactive Plan for building a cinematic Marvel Studios timeline website inspired by Awwwards-winning experiences.
