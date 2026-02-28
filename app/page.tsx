@@ -7,14 +7,15 @@ import Features from "../components/Features";
 import Story from "../components/Story";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
+import CharacterShowcase from "../components/CharacterShowcase";
 
 export default function Home() {
   return (
     <div className="relative min-h-screen w-screen overflow-x-hidden bg-black text-white">
       <Navbar />
       <Hero />
-      <About />
       <Features />
+      <CharacterShowcase />
       <Story />
       <Contact />
       <Footer />

@@ -51,11 +51,11 @@ const BentoCard = ({ src, title, description }) => {
         className="absolute l-0 t-0 size-full object-cover object-center"
       />
 
-      <div className="relative z-10 flex size-full flex-col justify-between p-5 text-red-50">
+      <div className="relative z-10 flex size-full flex-col justify-between p-5 text-white">
         <div>
           <h1 className="bento-title special-font">{title}</h1>
           {description && (
-            <p className="mt-3 max-w-64 text-xs md:text-base bg-black/40 backdrop-blur-md p-3 rounded-lg border border-white/20">
+            <p className="mt-3 max-w-64 text-xs md:text-base text-white bg-black/15 backdrop-blur-sm p-3 rounded-lg border border-white/10">
               {description}
             </p>
           )}
@@ -70,10 +70,10 @@ const Features = () => {
     <section id="vault" className="bg-black pb-52">
       <div className="container mx-auto px-3 md:px-10">
         <div className="px-5 py-32">
-          <p className="font-circular-web text-lg text-red-50">
+          <p className="font-circular-web text-lg text-white">
             Into the Metagame Layer
           </p>
-          <p className="max-w-md font-circular-web text-lg text-red-50 opacity-50">
+          <p className="max-w-md font-circular-web text-lg text-white opacity-50">
             Immerse yourself in a rich and ever-expanding universe where a
             vibrant array of products converge into an interconnected overlay
             experience on your workd.

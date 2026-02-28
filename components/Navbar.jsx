@@ -41,7 +41,7 @@ const Navbar = () => {
 
   const navItems = [
     { name: "Nexus", href: "#nexus" },
-    { name: "About", href: "#about" },
+    { name: "Heroes", href: "/characters" },
     { name: "Timeline", href: "/timeline" },
     { name: "Vault", href: "#vault" },
     { name: "Prologue", href: "#prologue" },
@@ -107,9 +107,8 @@ const Navbar = () => {
               {[1, 2, 3, 4].map((bar) => (
                 <div
                   key={bar}
-                  className={`indicator-line  ${
-                    isIndicatorActive ? "active" : ""
-                  }`}
+                  className={`indicator-line  ${isIndicatorActive ? "active" : ""
+                    }`}
                   style={{ animationDelay: `${bar * 0.1}s` }}
                 />
               ))}
