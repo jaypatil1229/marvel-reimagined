@@ -1,6 +1,7 @@
 "use client";
 import React, { useRef, useState } from "react";
 import { TiLocationArrow } from "react-icons/ti";
+import Link from "next/link";
 
 const BentoTilt = ({ children, className = "" }) => {
   const [transformStyle, setTransformStyle] = useState("");
@@ -40,16 +41,18 @@ const BentoTilt = ({ children, className = "" }) => {
   );
 };
 
-const BentoCard = ({ src, title, description }) => {
+const BentoCard = ({ src, title, description, href = "/characters" }) => {
   return (
-    <div className="relavie size-full">
+    <Link href={href} className="relavie size-full block group cursor-pointer">
       <video
         src={src}
         loop
         muted
         autoPlay
-        className="absolute l-0 t-0 size-full object-cover object-center"
+        className="absolute l-0 t-0 size-full object-cover object-center transition-transform duration-700 group-hover:scale-105"
       />
+      {/* Hover tint */}
+      <div className="absolute inset-0 bg-red-900/0 group-hover:bg-red-900/20 transition-colors duration-300" />
 
       <div className="relative z-10 flex size-full flex-col justify-between p-5 text-white">
         <div>
@@ -60,8 +63,13 @@ const BentoCard = ({ src, title, description }) => {
             </p>
           )}
         </div>
+        {/* CTA */}
+        <div className="flex items-center gap-2 text-white/40 group-hover:text-white/80 transition-colors duration-300 text-[10px] uppercase tracking-widest">
+          <TiLocationArrow className="text-red-500" />
+          <span>View Hero Files</span>
+        </div>
       </div>
-    </div>
+    </Link>
   );
 };
 
@@ -130,12 +138,12 @@ const Features = () => {
           </BentoTilt>
 
           <BentoTilt className="bento-tilt_2">
-            <div className="flex size-full flex-col justify-between bg-violet-300 p-5">
+            <Link href="/characters" className="flex size-full flex-col justify-between bg-violet-300 p-5 hover:bg-violet-400 transition-colors duration-300">
               <h1 className="bento-title special-font max-w-64 text-black">
                 Explo<b>r</b>e M<b>o</b>re !
               </h1>
               <TiLocationArrow className="m-5 scale-[5] self-end" />
-            </div>
+            </Link>
           </BentoTilt>
 
         </div>
