@@ -9,26 +9,23 @@ export const VideoPreview = ({ children }) => {
   const sectionRef = useRef(null); 
   const contentRef = useRef(null); 
 
-  // Handles mouse movement over the container
   const handleMouseMove = ({ clientX, clientY, currentTarget }) => {
-    const rect = currentTarget.getBoundingClientRect(); // Get dimensions of the container
+    const rect = currentTarget.getBoundingClientRect(); 
 
-    const xOffset = clientX - (rect.left + rect.width / 2); // Calculate X offset
-    const yOffset = clientY - (rect.top + rect.height / 2); // Calculate Y offset
+    const xOffset = clientX - (rect.left + rect.width / 2); 
+    const yOffset = clientY - (rect.top + rect.height / 2); 
 
     if (isHovering) {
-      // Move the container slightly in the direction of the cursor
       gsap.to(sectionRef.current, {
         x: xOffset,
         y: yOffset,
-        rotationY: xOffset / 2, // Add 3D rotation effect
+        rotationY: xOffset / 2, 
         rotationX: -yOffset / 2,
-        transformPerspective: 500, // Perspective for realistic 3D effect
+        transformPerspective: 500, 
         duration: 1,
         ease: "power1.out",
       });
 
-      // Move the inner content in the opposite direction for a parallax effect
       gsap.to(contentRef.current, {
         x: -xOffset,
         y: -yOffset,
@@ -39,7 +36,6 @@ export const VideoPreview = ({ children }) => {
   };
 
   useEffect(() => {
-    // Reset the position of the content when hover ends
     if (!isHovering) {
       gsap.to(sectionRef.current, {
         x: 0,

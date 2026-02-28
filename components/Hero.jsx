@@ -143,7 +143,7 @@ const Hero = () => {
         </div>
 
         <h1 className="special-font hero-heading absolute bottom-5 right-5 z-40 text-red-50">
-          M<b>A</b>RVEL
+        DESC<b>E</b>ND INTO <br/> THE <b>M</b>ULT<b>I</b>VERSE
         </h1>
 
         <div className="absolute left-0 top-0 z-40 size-full">
@@ -166,8 +166,8 @@ const Hero = () => {
         </div>
       </div>
 
-      <h1 className="special-font hero-heading absolute bottom-5 right-5 text-black">
-        DESCEND INTO <br/> THE MULTIVERSE
+      <h1 className="special-font hero-heading absolute bottom-5 right-5 text-white">
+        DESC<b>E</b>ND INTO <br/> THE <b>M</b>ULT<b>I</b>VERSE
       </h1>
     </div>
   );
