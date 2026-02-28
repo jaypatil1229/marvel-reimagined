@@ -40,13 +40,9 @@ const Navbar = () => {
   }, [isNavVisible]);
 
   const navItems = [
-    { name: "Nexus", href: "#nexus" },
     { name: "Heroes", href: "/characters" },
     { name: "Timeline", href: "/timeline" },
-    { name: "Vault", href: "#vault" },
-    { name: "Prologue", href: "#prologue" },
-    { name: "Contact", href: "#contact" }
-  ];
+    ];
   const toggleAudioIndicator = () => {
     setIsAudioPlaying((prev) => !prev);
 
@@ -69,16 +65,8 @@ const Navbar = () => {
       <header className="absolute top-1/2 w-full -translate-y-1/2">
         <nav className="flex size-full items-center justify-between p-4">
           <div className="flex items-center gap-7 ">
-            <img src="/img/logo.png" alt="logo" className="w-10" />
 
-            <Button
-              id="product-button"
-              title="Products"
-              rightIcon={<TiLocationArrow />}
-              containerClass={
-                "bg-red-50 md:flex hidden items-center justify-center gap-1"
-              }
-            />
+            
           </div>
 
           <div className="flex h-full items-center">

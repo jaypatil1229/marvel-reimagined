@@ -19,7 +19,7 @@ const characters = [
         color: "#c0392b",
         glowColor: "rgba(192,57,43,0.6)",
         gradient: "from-red-900 via-red-800 to-yellow-700",
-        img: "img/gallery-1.webp",
+        img: "img/heroes/iron-man.webp",
         tag: "MARK L",
     },
     {
@@ -33,7 +33,7 @@ const characters = [
         color: "#2980b9",
         glowColor: "rgba(41,128,185,0.6)",
         gradient: "from-blue-900 via-blue-700 to-indigo-600",
-        img: "img/gallery-2.webp",
+        img: "img/heroes/thor.webp",
         tag: "ASGARDIAN",
     },
     {
@@ -47,7 +47,7 @@ const characters = [
         color: "#27ae60",
         glowColor: "rgba(39,174,96,0.6)",
         gradient: "from-gray-900 via-green-900 to-gray-800",
-        img: "img/gallery-3.webp",
+        img: "img/heroes/black-widow.webp",
         tag: "S.H.I.E.L.D",
     },
     {
@@ -61,7 +61,7 @@ const characters = [
         color: "#8e44ad",
         glowColor: "rgba(142,68,173,0.6)",
         gradient: "from-purple-900 via-indigo-800 to-purple-700",
-        img: "img/gallery-4.webp",
+        img: "img/heroes/dr-strange.jpeg",
         tag: "SORCERER SUPREME",
     },
     {
@@ -75,7 +75,7 @@ const characters = [
         color: "#16a085",
         glowColor: "rgba(22,160,133,0.6)",
         gradient: "from-green-900 via-teal-800 to-emerald-700",
-        img: "img/Loki.jpg",
+        img: "img/heroes/loki.jpg",
         tag: "VARIANT L1130",
     },
     {
@@ -89,7 +89,7 @@ const characters = [
         color: "#e67e22",
         glowColor: "rgba(230,126,34,0.6)",
         gradient: "from-orange-900 via-amber-800 to-red-700",
-        img: "img/gallery-5.webp",
+        img: "img/heroes/star-lord.avif",
         tag: "HALF-CELESTIAL",
     },
 ];
