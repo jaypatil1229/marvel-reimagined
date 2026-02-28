@@ -138,11 +138,14 @@ const Features = () => {
           </BentoTilt>
 
           <BentoTilt className="bento-tilt_2">
-            <Link href="/characters" className="flex size-full flex-col justify-between bg-violet-300 p-5 hover:bg-violet-400 transition-colors duration-300">
-              <h1 className="bento-title special-font max-w-64 text-black">
+            <Link
+              href="/characters"
+              className="group flex size-full flex-col justify-between bg-linear-to-br from-black via-[#16070b] to-[#221230] p-5 text-white transition-all duration-500 hover:from-[#1a090d] hover:via-[#250a11] hover:to-[#2b1a44]"
+            >
+              <h1 className="bento-title special-font max-w-64 text-white">
                 Explo<b>r</b>e M<b>o</b>re !
               </h1>
-              <TiLocationArrow className="m-5 scale-[5] self-end" />
+              <TiLocationArrow className="m-5 scale-[5] self-end text-red-300 transition-colors duration-300 group-hover:text-red-75" />
             </Link>
           </BentoTilt>
 
