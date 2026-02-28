@@ -159,6 +159,9 @@ const Hero = () => {
               id="watch-trailer"
               title="WATCH CHRONICLES"
               leftIcon={<TiLocationArrow />}
+              onClick={() => {
+                window.location.href = "https://www.marvel.com/watch/trailers-and-extras";
+              }}
               containerClass="bg-red-600 text-white flex-center gap-1"
             />
           </div>
