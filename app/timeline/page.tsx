@@ -1,6 +1,7 @@
 "use client";
 import React, { useEffect, useMemo, useRef, useState } from "react";
 import Image from "next/image";
+import Navbar from "../../components/Navbar";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
 
@@ -313,6 +314,8 @@ export default function Timeline() {
           box-shadow: 0 0 18px color-mix(in srgb, var(--timeline-accent) 70%, #5f6fff 30%);
         }
       `}</style>
+
+      <Navbar />
 
       <div className="pointer-events-none absolute inset-0 opacity-90">
         <div className="phase-parallax-layer absolute -left-28 top-24 h-72 w-72 rounded-full bg-[#e62429]/15 blur-3xl" />

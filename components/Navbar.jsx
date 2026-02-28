@@ -1,6 +1,6 @@
 "use client";
 import React, { useEffect, useRef, useState } from "react";
-import Button from "./Button";
+import Image from "next/image";
 import { TiLocationArrow } from "react-icons/ti";
 import { useWindowScroll } from "react-use";
 import gsap from "gsap";
@@ -65,8 +65,15 @@ const Navbar = () => {
       <header className="absolute top-1/2 w-full -translate-y-1/2">
         <nav className="flex size-full items-center justify-between p-4">
           <div className="flex items-center gap-7 ">
-
-            
+            <a href="/" className="relative block h-9 w-40">
+              <Image
+                src="/img/Marvel_Logo.svg"
+                alt="Marvel"
+                fill
+                priority
+                className="object-contain object-left"
+              />
+            </a>
           </div>
 
           <div className="flex h-full items-center">

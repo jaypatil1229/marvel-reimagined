@@ -1,4 +1,4 @@
-"use client";
+import type { Metadata } from "next";
 import Hero from "../components/Hero";
 import Navbar from "../components/Navbar";
 import Features from "../components/Features";
@@ -6,6 +6,12 @@ import Story from "../components/Story";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
 import CharacterShowcase from "../components/CharacterShowcase";
+
+export const metadata: Metadata = {
+  title: "Marvel Reimagined | Cinematic Universe",
+  description:
+    "Explore heroes, timelines, and cinematic story arcs in an immersive Marvel-inspired universe experience.",
+};
 
 export default function Home() {
   return (
